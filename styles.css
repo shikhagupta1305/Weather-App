@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background-image: url(https://i.pinimg.com/564x/2c/dd/5a/2cdd5a7362dbfb4388157ddda7096aa8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(201, 193, 193,0.1);
+    border-radius: 20px;
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.8);
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.header .serach-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.inputBtn {
+    background-color: rgb(230, 238, 238);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s ease;
+}
+
+.inputBtn:hover {
+    background-color: #92FE9D;
+}
+
+.not-found {
+    display: none; 
+    margin-top: 20px;
+}
+
+.not-found h1 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.not-found img {
+    width: 200px;
+}
+
+
+ .weather-body {
+    display: none; 
+} 
+
+.weather-body {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tempreture {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.description {
+    font-size: 20px;
+    color: white;
+}
+
+
+.weather-details {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity, .Wind {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.humidity .text, .Wind .text {
+    text-align: center;
+}
+
+.humidity .bi-droplet, .Wind.fa-wind {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #eff4f5;
+}
+
+.humidity span, .Wind span {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.humidity p, .Wind p {
+    font-size: 14px;
+    color: white;
+}

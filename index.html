@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="serach-box">
+                <input type="text" placeholder="Enter Your City" class="input-box">
+                <button class="inputBtn" ><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div class="not-found">
+            <h1> Sorry, Location Not Found!</h1>
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/location-finding-error-illustration-download-in-svg-png-gif-file-formats--world-logo-searching-not-found-landing-page-concept-pack-seo-web-illustrations-2289757.png" alt="404 error">
+        </div>
+
+        <div class="weather-body">
+            <div class="weather-box">
+                <p class="tempreture">0°C</p>
+                <p class="description"> Clouds</p>
+          </div>
+
+          <div class="weather-details">
+            <div class="humidity">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                    <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                  </svg>
+
+                  <div class="text">
+                    <span class ="Humidity">45%</span>
+                    <p>Humidity</p>
+                  </div>
+            </div>
+
+            <div class="Wind">
+                <i class="fa-solid fa-wind"></i>
+
+                  <div class="text">
+                    <span class ="wind-speed">30 km/h </span>
+                    <p>Wind Speed</p>
+                  </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
